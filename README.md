@@ -26,5 +26,3 @@ Replace `YOUR_APPLICATION_ID` in the following link with the actual Application 
 `https://discord.com/api/oauth2/authorize?client_id=YOUR_APPLICATION_ID&permissions=0&scope=bot`
 
 Paste the url into a browser and authorise the bot to join the server.
-
-https://discord.com/api/oauth2/authorize?client_id=1109461492488736868&permissions=0&scope=bot
