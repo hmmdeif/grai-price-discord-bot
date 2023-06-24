@@ -23,7 +23,12 @@ export const updatePresence = async (
     log(chalk.white(`Setting name: ${priceStr}`))
     log(chalk.white(`Setting activity: ${activityStr}`))
 
-    client.user?.setUsername(priceStr)
+    client.guilds.cache.forEach(async (guild) => {
+        const me = await guild.members.fetchMe()
+        if (me) {
+            me.setNickname(priceStr)
+        }
+    })
     client.user?.setPresence({
         activities: [
             {
