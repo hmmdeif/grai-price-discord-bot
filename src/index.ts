@@ -47,7 +47,7 @@ const main = async () => {
             console.error(`${getTimeStamp()} ERROR LOGGED`)
             console.error(e)
         } finally {
-            const wait = 10000
+            const wait = 60000 * 5 // 5 minutes
             log(chalk.gray(`Waiting for ${wait / 1000} seconds...`))
             await sleep(wait)
         }
