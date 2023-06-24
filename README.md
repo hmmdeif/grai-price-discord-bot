@@ -11,6 +11,7 @@ Tested on nodejs 16.x
 Copy and paste `.env.sample` and rename to `.env`. Fill in discord token and rpc variables.
 
 `npm run build`
+
 `npm start`
 
 ### Create Discord Application
@@ -18,7 +19,9 @@ Copy and paste `.env.sample` and rename to `.env`. Fill in discord token and rpc
 `https://discord.com/developers/applications`
 
 New Application -> Set name
+
 Sidebar -> Bot -> Reset Token -> Copy token -> Paste into `.env`
+
 Sidebar -> General Information -> Copy Application Id
 
 Replace `YOUR_APPLICATION_ID` in the following link with the actual Application Id you just copied.
